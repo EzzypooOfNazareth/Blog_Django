@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+        <div class="post_view_container animated animatedFadeInUp fadeInUp">
+                <img src="{{ post.img.url }}" alt="photo">
+                <div class="detail_text_wrapper">
+                        <h3>{{ post.title }}</h3>
+                        <p>{{ post.content|linebreaks }}</p>
+                </div>
+        </div>
+
+{% endblock %}
